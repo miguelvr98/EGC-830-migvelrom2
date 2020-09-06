@@ -25,7 +25,7 @@ APIS = {
    	'store': 'https://prueba-examen-septiembre.herokuapp.com',
     	'visualizer': 'https://prueba-examen-septiembre.herokuapp.com',
     	'voting': 'https://prueba-examen-septiembre.herokuapp.com',
-		}
+	}
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
