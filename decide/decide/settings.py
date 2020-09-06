@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
 import django_heroku
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 BASEURL = 'https://prueba-examen-septiembre.herokuapp.com'
