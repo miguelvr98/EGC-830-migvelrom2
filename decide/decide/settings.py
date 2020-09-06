@@ -12,6 +12,23 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+import django_heroku
+	ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+	BASEURL = 'https://prueba-examen-septiembre.herokuapp.com' (la url de la aplicacion)
+	(todas serian igual que BASEURL EN APIS)
+	APIS = {
+    		'authentication': 'https://prueba-examen-septiembre.herokuapp.com', 
+    		'base': 'https://prueba-examen-septiembre.herokuapp.com',
+    		'booth': 'https://prueba-examen-septiembre.herokuapp.com',
+    		'census': 'https://prueba-examen-septiembre.herokuapp.com',
+    		'mixnet': 'https://prueba-examen-septiembre.herokuapp.com',
+   		'postproc': 'https://prueba-examen-septiembre.herokuapp.com',
+    		'store': 'https://prueba-examen-septiembre.herokuapp.com',
+    		'visualizer': 'https://prueba-examen-septiembre.herokuapp.com',
+    		'voting': 'https://prueba-examen-septiembre.herokuapp.com',
+		}
+	django_heroku.settings(locals())
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +42,6 @@ SECRET_KEY = '^##ydkswfu0+=ofw0l#$kv^8n)0$i(qd&d&ol#p9!b$8*5%j1+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
