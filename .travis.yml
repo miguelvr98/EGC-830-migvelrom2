@@ -18,3 +18,5 @@ install:
 script:
 - cd decide
 - python3 ./manage.py test --keepdb
+notifications:
+  email: false
