@@ -20,8 +20,10 @@ script:
 - cp travis_local_settings.py local_settings.py
 - python ./manage.py test --keepdb
 deploy:
-provider: heroku
-app: "prueba-examen-septiembre"
-strategy: git
+  provider: heroku
+  app: prueba-examen-septiembre
+  strategy: git
+  api_key:
+    secure: sdetqoKTJ4KMMuYJgJt4cImgaylL7a9Sr/B0imz2USMlw7zsoITctHs70VhChIxiCsu5h7sgDebBdbRN5BGiLdus4evWPAim6BcO4b0nTzauoWZPNFWSNGPgVIjYqdTFUCUMiUpBXdcrYeiBVRGU1AoM9G1ksmzAKlNU+hMyIfgqtIKhMvtKQEpgWPiIzjiSQdRbwBk5HSNs2nObjq5NLu9MTDannIXl6pWNs+jo+2PLolNXb01PaewrAMJSsk8OcAM8Z63xqiaroW3E2cVd0AGoqFMCvlllrVZ8QKofgUxSP6HK/RZ4fQ2PAmvJwgLTC8sSIPS6dXaYnJxRo23CbjEMJlNAeGgzj8WDZmVW8KVNa57FJVg47dlgMrod96FpWxt+5zO8epDlwCIm6p9tK3VXyGC/aLvda9Su07qZJyY28Njs2QibuuMHr+V7foSPCHHlmngPnS//F/kQaOVBuwSqLKbxmeENUFxX051AKnVGydqT3huq91qGvD3wmu81B9SqplT6YqU/utuPxsnLdr8XUU0tDiIOknbcJKCfif5I8cjVPxYvQkLePguLPAXG7F4IXqeAyFGgzBK8LitsxqTHAf85m56Y/pDt7+OGcC2UbhU0uibdDVljIOEtS0qtk1tTfj7tPGUsiYz8jWDAhIaqbVtm2qicN7wPq3+Isqw=
 notifications:
   email: false
