@@ -14,8 +14,7 @@ import os
 
 import django_heroku
 	ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
-	BASEURL = 'https://prueba-examen-septiembre.herokuapp.com' (la url de la aplicacion)
-	(todas serian igual que BASEURL EN APIS)
+	BASEURL = 'https://prueba-examen-septiembre.herokuapp.com'
 	APIS = {
     		'authentication': 'https://prueba-examen-septiembre.herokuapp.com', 
     		'base': 'https://prueba-examen-septiembre.herokuapp.com',
@@ -84,7 +83,6 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
